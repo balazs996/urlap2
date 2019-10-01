@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <form name="urlap" method="get" autocomplete="off">
+            <fieldset>
+                <legend>Névfeltöltés</legend>
+            Vezetéknév:
+            <input type="text" name="veznev"/> <br>
+            Keresztnév:
+            <input type="text" name="kernev"/> <br>
+            Neme:<br>
+            <input type="radio" name="sex" value="no" >Nő
+            <input type="radio" name="sex" value="ferfi" >Férfi<br>
+            <select name="nev" size="4" multiple="multiple">
+                <option value="laszlo">László</option>
+                <option value="david">Dávid</option>
+                <option value="balazs" selected="selected">Balázs</option>
+                <option value="adam">Ádám</option>
+                <option value="viktor">Viktor</option>
+                <option value="kinga">Kinga</option>
+                <option value="alexandra">Alexandra</option>
+            </select><br>
+            <textarea name="sokszoveg" cols="30" rows="10"></textarea><br>
+            <input type="checkbox" name="tel" value="tel">Tél<br/>
+            <input type="checkbox" name="tavasz" value="tavasz">Tavasz<br/>
+            <input type="checkbox" name="nyar" value="nyar">Nyár<br/>
+            <input type="checkbox" name="osz" value="osz">Ősz<br/>
+            <button type="button" onclick="feldolgoz()">Elküld</button>
+        </fieldset>
+
+        </form>
+        <div id="rejto">
+            <p>Ide jön a felhasználó neve: <span id="nev"></span></p>
+        </div>
+        <script src="gyak.js"></script>
+    </body>
+</html>
